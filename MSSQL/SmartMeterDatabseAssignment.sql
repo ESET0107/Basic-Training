@@ -34,3 +34,5 @@ InstalledDate <= '2024-06-30'
 select CustomerId ,avg(EnergyConsumed) as AvgEnergyConsumed, max(EnergyConsumed) as MaxEnergyConsumed 
 from SmartMeterReadings where ReadingDateTime >= 2025-01-01 group by CustomerId
 
+select top 5 * from SmartMeterReadings order by EnergyConsumed desc
+select * from SmartMeterReadings order by EnergyConsumed desc offset 3 rows fetch next 5 rows only

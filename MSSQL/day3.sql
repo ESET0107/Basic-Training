@@ -21,7 +21,7 @@ insert into Books values (55,'Manusmriti',50) , (66,'How to quit smoking',6000) 
 create table orders(order_no int primary key,Users_id int, Product_id int,
 foreign key(Users_id) references Users(Users_id),
 foreign key(Product_id) references Books(Product_id)) 
-
+use master
 select * from Users
 select * from Books
 select * from orders
@@ -61,3 +61,4 @@ inner join Users B on b.Users_id = A.Users_id where (C.Product_id in (77,66,22))
 select C.Title,B.Names,C.Price from Books C inner join orders A on A.Product_id = C.Product_id
 inner join Users B on b.Users_id = A.Users_id
 --task 5
+
