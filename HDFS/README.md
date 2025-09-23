@@ -1,1 +1,1 @@
-### "HELLO"
+### Username and age is read from the input command READ and printed using output command ECHO
